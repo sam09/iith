@@ -1,0 +1,25 @@
+{
+  "name": "webRTC",
+  "version": "0.0.0",
+  "authors": [
+    "Sam Radhakrishnan <sk09idm@gmail.com>"
+  ],
+  "description": "A video calling app",
+  "keywords": [
+    "WebRTC",
+    "node",
+    "socket.io"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sam09/iith.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "webrtc-adapter": "*"
+  }
+}
