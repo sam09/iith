@@ -4,10 +4,12 @@ var http = require('http');
 // Create a node-static server instance
 var file = new(static.Server)();
 
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8181;
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 var app = http.createServer(function (req, res) {
 	file.serve(req, res);
-}).listen(8181);
+}).listen(server_port, server_ip_address);
 
 // Use socket.io JavaScript library for real-time web applications
 var io = require('socket.io').listen(app);
