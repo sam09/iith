@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/sam09/iith",
   "dependencies": {
+    "bower": "^1.4.1",
     "node-static": "^0.7.6",
     "socket.io": "^1.3.5"
   }
